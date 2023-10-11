@@ -1,0 +1,8 @@
+<div class="side-bar-fixe" [ngClass]="{'button-expand': expandButton}">
+    <button (click)="onToggleSidebar()">☰</button>
+    <ul *ngFor="let item of items">
+        <li>
+            <img [src]="item.icon" alt="icon" [title]="item.infoBulle">
+        </li>
+    </ul>
+</div>

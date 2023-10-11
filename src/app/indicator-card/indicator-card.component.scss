@@ -1,0 +1,37 @@
+.indicator-card {
+  width:200px;
+  padding: 10px;
+  color: white;
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.settings-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.card-bottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+}

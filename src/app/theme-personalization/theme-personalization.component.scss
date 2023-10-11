@@ -1,0 +1,113 @@
+.theme-personalization {
+    margin-right: 29rem;
+    position: fixed;
+    right: 0.5rem;
+    width : 100%;
+    height : 100%;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 1rem;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .predefined-themes{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+    label{
+        cursor : pointer;
+    }
+  }
+
+  
+   p{
+    font-weight: 600;
+  }
+
+  .theme-personalization input[type="radio"] {
+    display: none;
+}
+  
+  .theme-personalization .theme-card {
+    background-color: white;
+    padding: 0.8rem; /* Reduce padding */
+    border-radius: 8px; /* Reduce border radius */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+  }
+  
+  
+  .theme-personalization ul {
+    list-style-type: none;
+    padding: .5rem;
+    margin: 0;  
+  }
+
+  .theme-personalization li {
+    margin-bottom: .8rem; /* Reduce margin */
+    font-weight: 400;
+
+  }
+  
+  .theme-personalization label {
+    font-size: .9rem; /* Reduce font size */
+    font-weight: 500;
+    vertical-align: middle;
+    margin-left: 1rem;
+  }
+  
+  .theme-personalization input[type="color"] {
+    border: none;
+    outline: none;
+    width: 1.5rem; /* Reduce width */
+    height: 1.5rem; /* Reduce height */
+    vertical-align: middle;
+    border-radius: 50px; /* Reduce border radius */
+    cursor: pointer;
+  }
+  
+  /* Style checked checkbox */
+  .theme-personalization input[type="radio"]:checked + label::before {
+    content: '\2713';
+    font-size: 0.9rem; /* Reduce font size */
+    margin-right: 0.2rem;
+    color: #4caf50;
+  }
+
+
+  /* Style the color picker inputs */
+.color-picker {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: 0.5rem; /* Adjust spacing between label and color picker */
+}
+  
+  /* Apply custom color to card when checkbox is checked */
+  .theme-personalization .theme-card.checked {
+    background-color: #f0f8ff;
+  }
+  
+
+
+  /* Color picker hover effect */
+.theme-personalization input[type="color"]:hover,
+.theme-personalization li:hover {
+    //opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Apply custom color to card when checkbox is checked */
+.theme-personalization .theme-card.checked {
+    background-color: #f0f8ff;
+}

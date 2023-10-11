@@ -1,0 +1,8 @@
+<div class="app-header">
+    <div class="icon-container">
+      <img [src]="headermodel.icon" alt="Header Icon">
+    </div>
+    <p>{{ headermodel.title }}</p>
+    <div class="notification-badge" *ngIf="headermodel.notif_nbr">{{ headermodel.notif_nbr }}</div>
+  </div>
+  

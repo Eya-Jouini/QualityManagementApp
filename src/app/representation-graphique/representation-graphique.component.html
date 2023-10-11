@@ -1,0 +1,51 @@
+ 
+<div class="wrapper">
+    <div class="HEADER">
+      <button type="button" class="custom-btn" (click)="toggleView();">
+        ☰
+      </button>
+      <div class="header" *ngIf="showtable" >
+        <ul>
+          <li><input type="radio" name="options" id="option1" [(ngModel)]="choixRadio" value="indicateurs"><label for="option1">Indicateurs</label></li>
+          <li><input type="radio" name="options"  id="option2"[(ngModel)]="choixRadio" value="cartographie"><label for="option2">Cartographie</label></li>
+          <li><input type="radio" name="options" id="option3" [(ngModel)]="choixRadio" value="photo"><label for="option3">Photo</label></li>
+        </ul>
+      </div>
+    </div>
+
+   <div *ngIf="choixRadio === 'indicateurs'">
+      <div class="choix-representation-graphique table-container" *ngIf="showtable" >
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>N°.Indic</th>
+              <th>Description</th>
+              <th>Histogramme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let indicateur of tableIndicateurs">
+              <td>
+                <a class="text-primary" (click)="onSelectIndicator(indicateur);">{{ indicateur.number }}</a>
+              </td>
+              <td>{{ indicateur.name }}</td>
+              <td><input type="checkbox" [(ngModel)]="indicateur.isChecked"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart-container" [ngClass]="{'show-chart':!showtable}">
+        <canvas id="MyChart">{{ chart }}</canvas>
+      </div>
+  </div>
+  <app-file-upload *ngIf="choixRadio === 'photo'"></app-file-upload>
+  <div class="cartographie-component" *ngIf="choixRadio === 'cartographie'">Cartographie </div>
+</div>
+
+
+
+<!--
+  
+  
+</div>-->

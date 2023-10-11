@@ -1,0 +1,74 @@
+
+    <div class="theme-personalization">
+        <div class="predefined-themes">
+            <p>Standard Qualipro</p>
+            <div class="theme-card theme11">
+              <input type="radio" id="theme11" name="themeRadio" value="ancien theme" [(ngModel)]="theme1">
+              <label for="theme11">Ancien Thème Qualipro</label>
+            </div>
+            <div class="theme-card theme12">
+              <input type="radio" id="theme12" name="themeRadio" value="theme par defaut" [(ngModel)]="theme1">
+              <label for="theme12">Thème Qualipro par Défaut</label>
+            </div>
+            <div class="theme-card theme13">
+                <input type="radio" id="theme13" name="themeRadio" value="personnaliser theme" [(ngModel)]="theme1">
+                <label for="theme13">Personnaliser Thème</label>
+              </div>
+          </div>
+          
+ 
+    
+        <div class="personalized-themes" *ngIf="theme1==='personnaliser theme'">
+            <p>Disposition des Couleurs</p>
+            <div class="theme-card theme2">
+                <ul>
+                    <li>            
+                        <input type="color" id="theme21" [(ngModel)]="theme2.coulEnTete">
+                        <label for="theme21">En-tête</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme22" [(ngModel)]="theme2.coulAgenda">
+                        <label for="theme22">Agenda</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme23" [(ngModel)]="theme2.coulRaccourcis">
+                        <label for="theme23">Raccourcis</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme24" [(ngModel)]="theme2.coulGrille">
+                        <label for="theme24">Grille</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme25" [(ngModel)]="theme2.coulMenuPrincipal">
+                        <label for="theme25">Menu Principal</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme26" [(ngModel)]="theme2.coulSousMenu">
+                        <label for="theme26">Sous-menu principal</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme27" [(ngModel)]="theme2.coulEnTeteFiche">
+                        <label for="theme21">En-tête fiche </label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme27" [(ngModel)]="theme2.coulSousEnTete">
+                        <label for="theme21"> sous-entête</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme28" [(ngModel)]="theme2.coulPanel">
+                        <label for="theme28">Panel</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme29" [(ngModel)]="theme2.coulSousPanel">
+                        <label for="theme29">Sous-panel</label>
+                    </li>
+                    <li>            
+                        <input type="color" id="theme20" [(ngModel)]="theme2.coulGridView">
+                        <label for="theme20">Gridview</label>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+
+  
+    </div>

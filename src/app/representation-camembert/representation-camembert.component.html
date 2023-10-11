@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="HEADER">
+    {{ selectedIndicator?.name }}
+    <img src="./assets/settings.png" (click)="openModal();">
+  </div>
+
+  <div class="body">
+    <div class="canvas">
+      <canvas id="myChart">{{ chart }}</canvas>
+    </div>
+    <div class="labels">
+      <ul>
+        <li *ngFor="let mesure of selectedIndicator?.mesuresCamembert; let i = index">
+          <div class="color-label">
+            <div class="color-box" [style.backgroundColor]="backgroundColors[i]">
+              <div class="inner-circle"></div>
+            </div>
+            <span class="label">{{ mesure.nom }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="custom-tooltip" *ngIf="tooltipLabel !== undefined">
+      <p>{{ tooltipLabel }} : ({{ tooltipValue }}%)</p>
+    </div>
+  </div>
+</div>

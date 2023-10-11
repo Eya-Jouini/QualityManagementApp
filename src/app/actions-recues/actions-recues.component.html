@@ -1,0 +1,44 @@
+<div class="wrapper">
+    <div class="HEADER">
+        <div class="header-top">
+            <button type="button" class="custom-btn" (click)="toggleView();">
+                ☰
+            </button>
+                Mes actions reçues depuis le:
+        </div>
+        <div class="header" *ngIf="showRadio" >
+            <ul>
+                <!--
+                <li><input type="radio" name="options" id="option1" [(ngModel)]="choixRadio" value="indicateurs"><label for="option1">Indicateurs</label></li>-->
+                <li><input type="radio" name="choix"  id="choix2"[(ngModel)]="choixRadio" value="actions"><label for="choix2">Nouvelles Actions Reçues</label></li>
+                <li><input type="radio" name="choix" id="choix3" [(ngModel)]="choixRadio" value="photo"><label for="choix3">Photo</label></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="tableau-actions" *ngIf="choixRadio ==='actions'">
+        <div class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>N°.Ind</th>
+                    <th>Description</th>
+                    <th>Délais</th>
+                    <th>Taux</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let action of actionsRecues">
+                    <td ><a href="">{{action.num_action}}</a></td>
+                    <td>{{action.description}}</td>
+                    <td class="date">{{action.delais}}</td>
+                    <td><span class="pill">{{action.taux | percent }}</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <app-file-upload *ngIf="choixRadio === 'photo'"></app-file-upload>
+</div>

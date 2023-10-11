@@ -1,0 +1,51 @@
+.app{
+  height:100vh;
+  }
+
+
+.corps  {
+  display: flex;
+  flex-direction: row;
+  position : relative;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.content {
+  display: grid;
+  grid-template-columns:7fr 1fr;
+  gap:.5rem;
+  margin:0rem;
+  padding:0rem;
+  z-index: 1;
+  div{
+    margin-left: 3rem;
+  }
+
+}
+
+
+app-right-side-div{
+  position: fixed;
+  width : 5%;
+  height : 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999; 
+  margin-left: 95%;
+
+}
+
+.side-bars{
+  display: flex;
+  flex-direction: column; /* Display vertically */
+  position: absolute;
+  top: 0;
+  left: 0; /* Position on the left */
+  z-index: 999; /* Set a higher z-index value */
+  order: -1; /* Move the .side-bars to the beginning */
+}
+.main-content{
+  height:100%;
+}

@@ -1,0 +1,37 @@
+
+<div class="navbar-container dropdown" [ngClass]="{'navbar-container-show': showNavbarList}">
+
+  <ul *ngIf="showNavbarList">
+      <li *ngFor="let item of HeaderArray" >
+        <div class="parent">
+          <a (click)="navigateToRoute(item)" [ngClass]="{'show-children':item.showChildren,'dropdown-toggle': item.children}">
+            <img [src]="item.icon" alt="Icon">
+            <span>{{ item.title }}</span>
+          </a>
+        </div>
+      <div  class="children" *ngIf="item.showChildren">
+        <ul>
+          
+              <li *ngFor="let child of item.children">
+              <div class="children">
+                <a  (click)="navigateToRoute(child ,item)" [ngClass]="{'show-grand-children':child.showChildren,'dropdown-toggle': child.children}">
+                  <span>{{ child.title }}</span> 
+                </a>
+              </div>
+              <div *ngIf="child.showChildren">
+                <ul>
+                  <li *ngFor="let grandchild of child.children">
+                    <div class="grand-children">
+                        <a  (click)="navigateToRoute(grandchild , child ,item)">
+                          <span>{{ grandchild.title }}</span>
+                        </a>
+                    </div>
+                  </li> 
+                </ul>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>

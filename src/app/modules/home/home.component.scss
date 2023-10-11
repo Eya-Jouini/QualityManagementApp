@@ -1,0 +1,27 @@
+app-indicator-card-list  {
+    display: flex;
+    flex-direction: row;
+    position : relative;
+  }
+
+  
+.four-divs {
+    display: grid;
+    grid-template-columns: repeat(2, 550px); 
+    grid-template-rows: repeat(2, 340px);    /* Two rows of equal height */
+    gap: .5rem; /* Add gap between cells */
+    
+  }
+
+  .four-divs > *{
+    width:100%;
+    height: 100%;
+    background-color: #e6e6e674;
+    margin:.5rem;
+    border-radius: 10px;
+  }
+
+  .home{
+    display:flex;
+    height: 100%;
+  }

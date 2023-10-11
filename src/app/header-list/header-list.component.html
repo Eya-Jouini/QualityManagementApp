@@ -1,0 +1,11 @@
+<div class="app-header-container">
+  <div class="app-header-app-name">Qualipro<sup>&reg;</sup></div>
+  <div class="scroll-left" (click)="scrollLeft()">&lt;</div> <!-- Add scroll-left div with click event -->
+  <div class="app-header-list" #headerList>
+    <app-header *ngFor="let headermodel of HeaderArray" [headermodel]="headermodel"></app-header>
+  </div>
+  <div class="scroll-right" (click)="scrollRight()">&gt;</div> <!-- Add scroll-right div with click event -->
+  <span class="custom-separator"></span>
+  <div class="nbre-connectes" title="nombre de connectés"><img src="./assets/header-icons/reseau-social.png" alt="icon"><span>{{nbreConnectes}}</span></div>
+  <div class="user-name" title="votre profile"><img src='./assets/header-icons/profil-de-lutilisateur.png' alt="icon"><span>{{userName}}</span></div>
+</div>

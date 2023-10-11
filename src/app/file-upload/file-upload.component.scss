@@ -1,0 +1,25 @@
+/* Add or modify styles for the hidden component */
+app-file-upload[hidden] {
+    display: none;
+  }
+  
+div {
+  display : flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.wrapper , .text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  //margin-top: 2rem;
+  gap:20px;
+}
+
+button{
+  display:inline-block;
+  width:8rem;
+}

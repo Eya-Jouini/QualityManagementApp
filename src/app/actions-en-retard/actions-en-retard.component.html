@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="header">
+        Mes actions en retard
+    </div>
+    <div class="tableau-actions">
+        <div class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>N°.Ind</th>
+                    <th>Description</th>
+                    <th>Délais</th>
+                    <th>Taux</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let action of actionsEnRetard">
+                    <td ><a (click)="showActionModal(action);">{{action.num_action}}</a></td>
+                    <td>{{action.description}}</td>
+                    <td class="date">{{action.delais}}</td>
+                    <td><span class="pill">{{action.taux | percent }}</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

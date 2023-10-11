@@ -1,0 +1,77 @@
+*{
+  font-family: 'Poppins';
+  font-size: 12px;
+ 
+}
+
+.navbar-container {
+position: absolute;
+top: 2.5rem; /* Adjust this value as needed to position it below the header */
+left: 0; /* Adjust the positioning as needed */
+z-index: 20; /* Add a higher z-index value */
+width: 200px; /* Adjust the width as needed */
+//background-color: #d1d1d1;
+background-color: #f2f2f2; 
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+li{
+  min-height: 2.5rem;
+}
+
+}
+
+.children ul{
+  margin-top : .5rem;
+}
+
+ .grand-children ul{
+  margin-top : 1rem;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width :100%;
+  gap:10px;
+}
+
+
+.children ,.grand-children{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed to "flex-start" to align with the parent item's top */
+  padding: 10px;
+  position: relative; /* Added to position children relative to the parent */
+
+}
+
+li:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+.show-grand-children{
+  font-weight: 600;
+}
+.show-children {
+  font-weight: bold;
+}

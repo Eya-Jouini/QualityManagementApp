@@ -1,0 +1,3 @@
+<div class="indicator-cards" >
+    <app-indicator-card *ngFor="let indicator of randIndicatorTable" [indicator]="indicator" [cardNumber]="randIndicatorTable.indexOf(indicator)+1" (cardButtonClick)="onCardButtonClick($event)"></app-indicator-card>
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+
+
+    <div class="top-div">
+        <img src="../assets/home-button.png" alt="Home" (click)="navigateToHome()">
+
+        <img src="../assets/couleur.png" alt="icon" (click)="showThemePersonalization()" > 
+    </div>
+
+    <div class="bottom-div">
+        <img src="../assets/messagerie-en-nuage.png" alt="icon" (click)="openMessageModal()">
+        <img src="../assets/chatbot.png" alt="icon" (click)="openChat()">
+    </div>
+
+</div>
+
+<div class="chat-container-external" *ngIf="isChatVisible">
+    <app-chat ></app-chat>
+</div>
+
+<div class="theme-personalization" *ngIf="isThemeVisible">
+    <app-theme-personalization></app-theme-personalization>
+</div>
+
+
+
+
+

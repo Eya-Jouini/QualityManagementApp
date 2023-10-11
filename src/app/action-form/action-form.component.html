@@ -1,0 +1,36 @@
+<div class="form-container">
+    <form [formGroup]="actionForm" class="row g-3">
+        <div class="col-md-12">
+            <label for="sousAction" class="form-label">Sous-Action:</label>
+            <textarea id="sousAction" type="text" class="form-control" formControlName="sousAction"></textarea>
+        </div>
+        <div class="col-md-6">
+            <label for="taux" class="form-label">Taux:</label>
+            <input id="taux" type="number" class="form-control" formControlName="taux">
+        </div>
+        <div class="col-md-6">
+            <label for="cout" class="form-label">Coût* </label>
+            <input id="cout" type="number" class="form-control" formControlName="cout">
+        </div>
+        <div class="col-md-6">
+            <label for="dateDebutRealisation" class="form-label">Date Début Réalisation*</label>
+            <input id="dateDebutRealisation" type="date" class="form-control" formControlName="dateDebutRealisation">
+        </div>
+        <div class="col-md-6">
+            <label for="dateSaisieRealisation" class="form-label">Date Saisie Réalisation:</label>
+            <input id="dateSaisieRealisation" type="date" class="form-control" formControlName="dateSaisieRealisation">
+        </div>
+        <div class="col-md-6">
+            <label for="dateFinRealisation" class="form-label">Date Fin Réalisation*</label>
+            <input id="dateFinRealisation" type="date" class="form-control" formControlName="dateFinRealisation">
+        </div>
+        <div class="col-md-6">
+            <label for="numFicheProjet" class="form-label">N° Fiche Projet:</label>
+            <input id="numFicheProjet" type="number" class="form-control" formControlName="numFicheProjet">
+        </div>
+        <div class="col-md-12">
+            <label for="commentaire" class="form-label">Commentaire*</label>
+            <textarea id="commentaire" type="text" class="form-control" formControlName="commentaire"></textarea>
+        </div>
+    </form>
+</div>

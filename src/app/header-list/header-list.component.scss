@@ -1,0 +1,96 @@
+*{
+  font-family: 'Poppins';
+  color: white;
+  font-size: 12px;
+}
+.app-header-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 11%; 
+  border: none;
+  position: relative;
+  background-color:#2181b4 ;
+  padding-left : 2rem;
+  padding-right : 2rem;
+ 
+}
+
+.custom-separator {
+  width: 5px; /* Adjust the width to create the desired thinness */
+  height: 50px; /* Adjust the height to create the desired height */
+  background-color: white; /* Set the color of the separator */
+  margin: 0 0; /* Adjust the margin to add spacing around the separator */
+}
+
+.app-header-list {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 10px;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: hidden;
+  margin-right: 50px;
+}
+
+.app-header-app-name {
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 10px; /* Add margin to move to the right */
+  margin-right:50px;
+  color:white;
+}
+
+.scroll-left,
+.scroll-right {
+  font-size: 24px;
+  font-weight: bold;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  color: white;
+  font-family: 'Poppins';
+  z-index: 1;
+  user-select: none;
+}
+
+.scroll-left{
+  margin-left: 11rem;
+}
+
+.scroll-left {
+  left: 3rem;
+}
+
+.scroll-right {
+  right:200px;
+  }
+
+.nbre-connectes img, .user-name img {
+  width:  30x;
+  height: 30px;
+  margin-right: 5px;
+  cursor:pointer;
+}
+
+.nbre-connectes, .user-name {
+  display: flex;
+  width: 150px; 
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+/* 
+
+*/

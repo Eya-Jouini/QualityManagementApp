@@ -1,0 +1,29 @@
+<div class="indicators-modal">
+  <div class="header bg-primary text-white p-0">
+    <div class="header bg-primary text-white p-0">
+      <div class="header-content">
+        <div class="title">Indicateurs (Représentation Camembert)</div>
+        <img class="button" src="./assets/x-button.png" (click)="closeModal();">
+      </div>
+    </div>
+  </div>
+    <div class="body">
+      <div class="tableau-indicateurs">
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°.Ind</th>
+                  <th>Indicateur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let indicateur of indicatorsTable">
+                  <td ><a href="#" (click)="modifyDoughnutChart(indicateur);">{{indicateur.number}}</a></td>
+                  <td>{{indicateur.name}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+</div>
+

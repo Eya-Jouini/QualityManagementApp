@@ -1,0 +1,19 @@
+<div class="app">
+    <app-header-list></app-header-list>
+
+    <div class="corps">
+        <div class="side-bars">
+            <app-side-bar-fixe (toggleSidebar)="toggleNavbarList()" [expandButton]="showNavbarList"></app-side-bar-fixe>
+            <app-navbar-list [showNavbarList]="showNavbarList"></app-navbar-list>
+        </div>   
+        <div class="content">
+            <div class="main-content">
+                <router-outlet></router-outlet>
+            </div>
+                <app-right-side-div class="right-side">  
+                </app-right-side-div>
+                
+        </div>
+        
+    </div>
+</div>

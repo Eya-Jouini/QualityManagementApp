@@ -1,0 +1,120 @@
+.wrapper{
+    padding:1rem;
+    //margin:1rem;
+    display: flex;
+    flex-direction:column;
+    font-family: "Poppins";
+    height:100%;
+    font-size: 13px;
+}
+
+
+
+.header, .header-top {
+    font-weight: bold;
+    display : flex;
+    align-items: center;
+    margin-left: .5rem;
+
+}
+
+.header{
+  display: flex; 
+  justify-content: center;
+}
+
+.header-top{
+  font-size: 14px;
+}
+
+.HEADER{
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+ul{
+  display: flex; 
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+
+}
+
+li{
+  margin-right: 10px;
+}
+
+.table-container {
+    margin-top :1rem;
+    padding-top:0;
+    height:14.5rem;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .tableau-actions{
+    margin-top:0;
+    padding-top:0;
+  }
+
+
+.table-bordered th,
+.table-bordered td {
+
+    padding: 0.5rem;
+    padding-top:0;
+}
+
+td a{
+    cursor: pointer;
+    text-decoration: none;
+    color : #0474BA;
+  }
+.date{
+    width: 6rem;
+  }
+
+  .pill {
+    background-color: #ff525241; 
+    border: none;
+    padding: 6px 0;
+    width: 50px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px; 
+    font-size: 12px; 
+    color:#f84a4a;
+}
+
+th{
+    text-align: center;
+}
+
+input[type="radio"] {
+  appearance: none; /* Remove default checkbox appearance */
+  -webkit-appearance: none; /* For Safari/Chrome */
+
+  /* Create a square checkbox with rounded corners */
+  width:  15px;
+  height: 15px;
+  border-radius: 50%; /* Make it round */
+  border: 2px solid #2181b4; /* Add a border */
+  margin-right: 5px; /* Add some spacing between checkbox and label text */
+}
+
+/* Apply custom styles to checked checkboxes */
+input[type="checkbox"]:checked , input[type="radio"]:checked {
+  background-color: #2ec1c3; /* Change background color when checked */
+}
+
+.custom-btn {
+  padding: 0.375rem 0.75rem;
+  line-height: 1;
+  font-size: 1.5rem;
+  color:#2181b4 ;
+  border:none;
+  border-radius: 5px;
+  background-color: transparent;
+}

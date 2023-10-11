@@ -1,0 +1,35 @@
+<div class="indicators-modal">
+    <!--<div class="header bg-primary text-white p-0">Indicateurs</div>-->
+    <div class="header bg-primary text-white p-0">
+      <div class="header-content">
+        <div class="title">Indicateurs</div>
+        <img class="button" src="./assets/x-button.png" (click)="closeModal();">
+      </div>
+    </div>
+    <div class="body">
+      <a href="#">Explication</a>
+      <div class="current-indicator"><b><u>Indicateur {{data.number}}</u> : {{data.name}}</b></div>
+      <div class="intervalle-date">
+          <label for="date-debut">Période suivi entre :</label>
+          <input id="date-debut" type="date" placeholder="01/01/2023">
+          <label for="date-fin">et :</label>
+          <input id="date-fin" type="date" placeholder="31/12/2023">
+      </div>
+      <div class="tableau-indicateurs">
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>N°.Ind</th>
+                  <th>Indicateur</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let indicateur of indicatorsTable">
+                  <td ><a href="#" (click)="modifyIndicatorCard(indicateur);">{{indicateur.number}}</a></td>
+                  <td>{{indicateur.name}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="action-modal">
+    <div class="HEADER bg-primary text-white p-0">Action N° {{action.num_action}}
+        <button class="btn" (click)="closeModal();">x</button>
+    </div>
+    <div class="body">
+
+        <div class="actions">
+            <button (click)="submitForm()">Valider</button>
+            <button>Accéder à l'action</button>
+        </div>
+        <div class="objet">
+            <div class="header">
+                <button (click)="expandSection(1);">{{button1}}</button>Objet
+            </div>
+            <div class="section-content" *ngIf="expandSection1">
+                <app-action-form [action]="action" #actionFormComponent></app-action-form>
+            </div>
+        </div>
+        <div class="intervenants">
+            <div class="header">
+                <button (click)="expandSection(2);">{{button2}}</button>Intervenants
+            </div>
+            <div class="section-content" *ngIf="expandSection2">
+                HELLO2
+            </div>
+        </div>
+        <div class="pieces_jointes">
+            <div class="header">
+                <button (click)="expandSection(3);">{{button3}}</button>Liste des pièces jointes
+            </div>
+            <div class="section-content" *ngIf="expandSection3">
+                HELLO3
+            </div>
+        </div>
+        <div class="action-rattachee">
+            <div class="header">
+                <button (click)="expandSection(4);">{{button4}}</button>Liste des actions auxquelles cette sous-action est rattachée
+            </div>
+            <div class="section-content" *ngIf="expandSection4">
+                    HELLO4
+            </div>
+        </div>
+   
+    </div>
+</div>
+

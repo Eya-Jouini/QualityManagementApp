@@ -1,0 +1,12 @@
+<div class="indicator-card">
+    <div class="card-top">
+      <div class="title">{{ indicator.name }}</div>
+      <img src="./assets/settings.png" alt="settings" class="settings-button" (click)="showIndicatorsModal();">
+    </div>
+    
+    <div class="card-bottom">
+      <div class="moyenne">{{ moyenne | percent }}</div>
+      <img src="./assets/taux-dinteret.png" alt="image" class="image">
+    </div>
+  </div>
+  
