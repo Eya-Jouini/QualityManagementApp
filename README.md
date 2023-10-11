@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
+![PageAccueil](https://github.com/Eya-Jouini/QualityManagementApp-Front-End/assets/99873571/e9c116a5-360b-4939-8977-fe42c6e4fceb)
+
+![3](https://github.com/Eya-Jouini/QualityManagementApp-Front-End/assets/99873571/60ec2c65-0ad1-4820-a3e1-5979009c47d9)
+
+![8](https://github.com/Eya-Jouini/QualityManagementApp-Front-End/assets/99873571/3028dd17-eb3b-4fdb-8c3a-26a92fae24a1)
+
+![1](https://github.com/Eya-Jouini/QualityManagementApp-Front-End/assets/99873571/3b8a021d-7a95-4794-a94b-3eebe49fb239)
+
+![7](https://github.com/Eya-Jouini/QualityManagementApp-Front-End/assets/99873571/9d905d0e-a436-4d3c-83f1-8329a8f5726c)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
